@@ -14,7 +14,7 @@ def rename_fields(df):
                        'Change in # Patients Tested': 'change_pat_tested',
                        'Change in # Confirmed Positive': 'change_confirmed_pos',
                        'Change in # Confirmed Negative': 'change_confirmed_neg',
-                       'Jurisdictional and Canadian % Positivity Rates': 'jurisdictional',
+                       'Jurisdictional and Canadian % Positivity Rates': 'jurisdictional_canada_pos_rt',
                        'Patients Tested per 10^{0} Canadians': 'tests_per_capita_canada',
                        'Patients Tested per 10^{0} by Jurisdiction': 'tests_per_capita_jurisdiction',
                        'Date Last Updated': 'update_date'
