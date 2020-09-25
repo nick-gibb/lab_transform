@@ -41,6 +41,10 @@ def update_date(df):
         '(', '').str.replace(')', '').apply(lambda x: parser.parse(x))
     return df
 
+def phac_date(df):
+    """Add a new column recording when PHAC received the record."""
+    df['phac_date'] = pd.datetime.now()
+    return df
 
 def main(data_file):
     logging.info(f'Loading file and transforming fields...')
@@ -49,7 +53,9 @@ def main(data_file):
     df = jurisdiction(df)
     df = truncate(df)
     df = update_date(df)
+    df = phac_date(df)
     logging.info(f'Transform complete. Exporting to csv...')
+    print(df)
     df.to_csv(data_file.replace(".csv", "_transformed.csv"), index=False)
 
 
