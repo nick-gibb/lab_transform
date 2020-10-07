@@ -33,7 +33,9 @@
 
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
-		"ms-python.python"
+		"ms-python.python",
+		"grapecity.gc-excelviewer",
+		"mechatroner.rainbow-csv"
 	]
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
